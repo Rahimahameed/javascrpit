@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form   method="post" id="f1" >
+        <label> username</label>
+       <input type="text"  id="t1" onfocus="fnfocus()" >
+       <label> age:</label>
+       <input type="text" id="t2" onblur="fnblur()">
+       <label> password</label>
+
+       <button onclick="fnclick()">click me</button>
+       <p id="p1" onmouseup="fnup()" onmousedown="fndown()">Lorem ipsum dolor sit amet, consectetur ad
+           ipisicing elit. Voluptates atque suscipit quaerat rerum minus cupiditate voluptatum dolore. Dolori
+           bus, quidem perspiciatis. </p>
+
+    
+       </form>
+
+       <script>
+           function fnfocus(){
+               document.getElementById("t1").style.background="red"
+           }
+
+           function fnblur(){
+               document.getElementById("t2").style.background="gray"
+           }
+
+           function fnselect(){
+            alert("you have succesfully registered")
+           }
+        function fnclick() {
+        alert("welcome")
+        }
+        function fnup() {
+        document.getElementById("p1").style.color = "blue";
+        }
+
+        function fndown() {
+        document.getElementById("p1").style.color = "green";
+        }
+
+
+
+
+           
+           
+
+       </script>
+    
+    
+       
+
+             
+
+          
+     
+</body>
+</html>
